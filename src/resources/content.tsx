@@ -69,7 +69,7 @@ const home: Home = {
         </Text>
       </Row>
     ),
-    // href: "",
+    href: "/",
   },
   subline: (
     <>
