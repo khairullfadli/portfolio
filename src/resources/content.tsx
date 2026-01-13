@@ -8,7 +8,7 @@ const person: Person = {
   role: "Backend Developer",
   avatar: "/images/avatar.jpg",
   email: "khairulfadli.dev@gmail.com",
-  location: "Bekasi, Indonesia", 
+  // location: "Bekasi, Indonesia", 
   languages: ["Indonesian", "English", "Japanese"],
 };
 
@@ -82,7 +82,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from Bekasi, Indonesia`,
   tableOfContent: {
     display: true,
     subItems: false,
