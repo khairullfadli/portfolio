@@ -2,7 +2,7 @@
 export {
   person,
   social,
-  newsletter,
+  // newsletter,
   home,
   about,
   blog,
@@ -12,7 +12,7 @@ export {
 
 export {
   display,
-  mailchimp,
+  // mailchimp,
   routes,
   protectedRoutes,
   baseURL,
