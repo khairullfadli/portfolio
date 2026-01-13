@@ -9,7 +9,7 @@ const person: Person = {
   avatar: "/images/avatar.jpg",
   email: "khairulfadli.dev@gmail.com",
   location: "Bekasi, Indonesia", 
-  //languages: ["Bahasa", "English", "Japanese"],
+  languages: ["Indonesian", "English", "Japanese"],
 };
 
 // const newsletter: Newsletter = {
