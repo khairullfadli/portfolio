@@ -18,10 +18,10 @@ const icons: Record<string, React.ComponentType<{ size?: number }>> = {
 
 export function Footer() {
 	return (
-		<footer className="mx-auto mt-16 flex w-full max-w-6xl flex-col items-center justify-between gap-4 px-6 pt-8 pb-4 text-sm sm:flex-row">
+		<footer className="mx-auto mt-8 flex w-full max-w-6xl flex-col items-center justify-between gap-4 px-6 pt-8 pb-4 text-sm sm:flex-row">
 			<p className="text-muted">
 				&copy; {new Date().getFullYear()} /{" "}
-				<span className="text-ink">{person.name}</span> / Built with Next.js
+				<span className="text-ink">{person.name}</span> / Built with Love
 			</p>
 
 			<ul className="flex items-center gap-1">

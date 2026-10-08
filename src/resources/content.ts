@@ -2,12 +2,13 @@
 
 export const person = {
 	name: "Khairul Fadli",
-	role: "Backend Developer",
+	role: "Full-Stack Developer",
 	// Zona waktu IANA, dipakai untuk jam di header dan di halaman About.
 	timeZone: "Asia/Jakarta",
+	location: "Indonesia/Bekasi",
 	// Taruh foto di public/images/avatar.jpg. Kosongkan untuk memakai inisial.
 	avatar: "/images/avatar.jpg",
-	email: "khairulfadli.dev@gmail.com",
+	email: "khairulfadli.job@gmail.com",
 	languages: ["Indonesian", "English", "Japanese"],
 };
 
@@ -37,47 +38,54 @@ export const social = [
 export const home = {
 	title: "Khairul's Portfolio",
 	description: `Portfolio website showcasing my work as a ${person.role}`,
-	badge: "welcome to my portfolio",
+	badge: "My Journey in Technology",
 	headline: `Hello There! I'm ${person.name}`,
 	subline:
-		"An Informatics Engineering graduate with a passion for technology and a drive for continuous learning. Experienced in Full-Stack Development, Networking, and IT Support. Based in Bekasi, Indonesia.",
-	aboutLabel: `About – ${person.name}`,
+		"An Informatics Engineering graduate passionate about technology, continuous growth, and exploring new ideas. Experienced in Full-Stack Development, IT Operations, and IT Security.",
+	aboutLabel: "About Me",
 };
 
 export const about = {
 	title: `About – ${person.name}`,
 	description: `Meet ${person.name}, ${person.role} from Bekasi, Indonesia`,
 	tableOfContent: true,
-	calendar: {
-		display: true,
-		label: "Schedule a call",
-		href: "https://cal.com",
-	},
+	cta: { display: true, label: "Download CV", href: "/CV_Khairul Fadli.pdf" },
 	intro: {
 		title: "Introduction",
 		// GANTI: ini masih teks sementara.
-		description: `${person.name} is a ${person.role} based in Bekasi, Indonesia, with a passion for building reliable systems and learning new technology.`,
+		description: `I’m passionate about building reliable digital solutions, solving technical challenges, and continuously learning new technologies. My experience spans Full-Stack Development, IT Operations, and IT Security.`,
 	},
 	// GANTI: bagian di bawah masih data contoh dari template referensi.
 	work: {
 		title: "Work Experience",
 		experiences: [
 			{
-				company: "FLY",
-				timeframe: "2022 - Present",
-				role: "Senior Design Engineer",
+				company: "PT Bank Negara Indonesia (Persero) Tbk.",
+				timeframe: "August 2026 - Present",
+				role: "IT Developer",
 				achievements: [
-					"Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.",
-					"Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.",
+					"Engineered and developed end-to-end web applications from the ground up, handling both frontend user interfaces and backend business logic.",
+					"Collaborated closely in an Agile environment with cross-functional team members, including fellow developers, product managers, and QA engineers, to translate business requirements into scalable digital solutions.",
+					"Ensured high application responsiveness, optimized code performance, and applied strict banking security standards across all development phases.",
 				],
 			},
 			{
-				company: "Creativ3",
-				timeframe: "2018 - 2022",
-				role: "Lead Designer",
+				company: "CV Alvirel Putra Teknik",
+				timeframe: "January 2025 - July 2026",
+				role: "IT Support Staff",
 				achievements: [
-					"Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.",
-					"Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.",
+					"Provided daily technical support for hardware, software, and network infrastructures.",
+					"Installed, configured, and maintained computers, and other peripheral devices.",
+					"Resolved complex system issues through effective troubleshooting and technical analysis.",
+				],
+			},
+			{
+				company: "BPTI UHAMKA",
+				timeframe: "August - November 2023",
+				role: "Internship Full Stack Developer",
+				achievements: [
+					"Developed a web-based student activities system interface using PHP (Laravel Framework).",
+					"Implemented a digital system to support student activities.",
 				],
 			},
 		],
@@ -86,12 +94,14 @@ export const about = {
 		title: "Studies",
 		institutions: [
 			{
-				name: "University of Jakarta",
-				description: "Studied software engineering.",
+				name: "Universitas Muhammadiyah Prof. Dr. Hamka",
+				description: "B.Eng. in Informatics Engineering",
+				grade: "GPA: 3.53/4.00",
 			},
 			{
-				name: "Build the Future",
-				description: "Studied online marketing and personal branding.",
+				name: "SMAN 01 Cibarusah",
+				description: "Science (MIPA)",
+				grade: "Average Grade: 88.00/100.00",
 			},
 		],
 	},
@@ -99,14 +109,55 @@ export const about = {
 		title: "Technical skills",
 		skills: [
 			{
-				title: "Figma",
-				description: "Able to prototype in Figma with unnatural speed.",
-				tags: ["Figma"],
+				title: "Full-Stack Development",
+				description:
+					"Building end-to-end web applications with a focus on responsive interfaces and reliable backend systems.",
+				tags: [
+					"JavaScript",
+					"TypeScript",
+					"React",
+					"Next.js",
+					"Node.js",
+					"Python",
+					"PHP",
+					"MySQL",
+					"C#",
+					".NET",
+					"HTML",
+					"CSS",
+					"Laravel",
+					"Rest API",
+					"Git",
+				],
 			},
 			{
-				title: "Next.js",
-				description: "Building next gen apps with Next.js and Supabase.",
-				tags: ["JavaScript", "Next.js", "Supabase"],
+				title: "IT Operations & Security",
+				description:
+					"Supporting IT infrastructure, network environments, and secure system operations.",
+				tags: ["IT Support", "LAN/WAN", "Network Security", "Cloud Security"],
+			},
+			{
+				title: "Cloud & DevOps",
+				description:
+					"Working with cloud infrastructure, system deployment, monitoring, and operational reliability.",
+				tags: [
+					"Cloud Storage",
+					"Compute Engine",
+					"IAM",
+					"Cloud Monitoring & Logging",
+				],
+			},
+			{
+				title: "AI & Machine Learning",
+				description:
+					"Exploring intelligent systems, machine learning models, and data-driven solutions.",
+				tags: [
+					"AI Agents",
+					"Generative AI",
+					"Machine Learning",
+					"Data Engineering",
+					"TensorFlow",
+				],
 			},
 		],
 	},

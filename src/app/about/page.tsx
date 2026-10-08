@@ -1,4 +1,4 @@
-import { CalendarDays, ChevronRight, Globe } from "lucide-react";
+import { Download, FileText, Globe } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import {
@@ -75,7 +75,7 @@ export default function About() {
 					)}
 					<p className="flex items-center gap-2 text-sm">
 						<Globe size={16} className="text-accent" aria-hidden />
-						{person.timeZone}
+						{person.location}
 					</p>
 					<ul className="flex flex-wrap justify-center gap-2">
 						{person.languages.map((language) => (
@@ -91,17 +91,16 @@ export default function About() {
 
 				<div className="min-w-0 flex-1">
 					<section id={sections[0].id} className="scroll-mt-28">
-						{about.calendar.display && (
+						{about.cta.display && (
 							<a
-								href={about.calendar.href}
-								target="_blank"
-								rel="noopener noreferrer"
+								href={about.cta.href}
+								download="CV_Khairul Fadli.pdf"
 								className={`mb-6 inline-flex items-center gap-3 rounded-full border border-accent/30 bg-accent/10 py-1.5 pr-1.5 pl-4 text-sm ${focus}`}
 							>
-								<CalendarDays size={16} className="text-accent" aria-hidden />
-								{about.calendar.label}
+								<FileText size={16} className="text-accent" aria-hidden />
+								{about.cta.label}
 								<span className="flex h-8 w-8 items-center justify-center rounded-full border border-line bg-surface/60">
-									<ChevronRight size={16} aria-hidden />
+									<Download size={16} aria-hidden />
 								</span>
 							</a>
 						)}
@@ -167,6 +166,7 @@ export default function About() {
 								<article key={school.name}>
 									<h3 className="text-2xl font-bold">{school.name}</h3>
 									<p className="mt-1 text-muted">{school.description}</p>
+									{school.grade && <p className="text-muted">{school.grade}</p>}
 								</article>
 							))}
 						</div>

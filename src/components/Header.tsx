@@ -46,7 +46,7 @@ export function Header() {
 
 	return (
 		<header className="fixed inset-x-0 top-0 z-50 grid grid-cols-[1fr_auto_1fr] items-center p-2">
-			<div className="hidden px-3 text-sm sm:block">{person.timeZone}</div>
+			<div className="hidden px-3 text-sm sm:block">{person.location}</div>
 
 			<nav
 				aria-label="Main"
